@@ -1,0 +1,11 @@
+<h1>HEY!</h1>
+
+
+<%= form_for :search, url: search_path, method: 'get', class: 'form-horizontal' do |f| %>
+  <div class="form-group">
+    <%= f.label :keyword %>
+    <%= f.text_field :keyword %>
+  </div>
+
+  <%= f.submit 'Search', class: 'btn btn-default' %>
+<% end  %>
